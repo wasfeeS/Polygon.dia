@@ -16,9 +16,13 @@ public class Main {
         double triangleSide2 = scanner.nextDouble();
         System.out.print("Side 3: ");
         double triangleSide3 = scanner.nextDouble();
+        System.out.print("Base ");
+        double triangleBase = scanner.nextDouble();
+        System.out.print("Height ");
+        double triangleHeight = scanner.nextDouble();
         scanner.nextLine(); 
 
-        Triangle triangle = new Triangle(triangleName, triangleType, triangleSide1, triangleSide2, triangleSide3);
+        Triangle triangle = new Triangle(triangleName, triangleType, triangleSide1, triangleSide2, triangleSide3, triangleBase, triangleHeight);
 
         
         System.out.println("\nEnter Quadrilateral details:");

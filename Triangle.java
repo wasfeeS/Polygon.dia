@@ -10,6 +10,8 @@ class Triangle extends Polygon {
         this.side1 = 0;
         this.side2 = 0;
         this.side3 = 0;
+        this.base = 0;
+        this.height = 0;
     }
 
     public Triangle(String name, String type, double side1, double side2, double side3, double base, double height) {
@@ -18,6 +20,8 @@ class Triangle extends Polygon {
         this.side1 = side1;
         this.side2 = side2;
         this.side3 = side3;
+        this.base = base;
+        this.height = height;
     }
 
     public String getType() {
@@ -53,24 +57,24 @@ class Triangle extends Polygon {
     }
 
     public double getBase() {
-        return side1;
+        return base;
     }
 
     public void setBase(double base) {
-        this.side1 = side1;
+        this.base = base;
     }
 
     public double getHeight() {
-        return side1;
+        return height;
     }
 
     public void setHeight(double height) {
-        this.side1 = side1;
+        this.height = height;
     }
 
     public double triArea() {
-        double s = (side1 + side2 + side3) / 2;
-        return Math.sqrt(s * (s - side1) * (s - side2) * (s - side3));
+        double s = (base*height) / 2;
+        return s;
     }
 
     public double triPeri() {
