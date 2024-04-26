@@ -69,7 +69,6 @@ public class Main {
         System.out.println("Height: " + pentagon.getHeight());
         System.out.println("Pentagon Area: " + pentagon.pentArea());
         System.out.println("Pentagon Perimeter: " + pentagon.pentPeri());
-
         scanner.close();
     }
 }
