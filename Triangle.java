@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 class Triangle extends Polygon {
     private String type;
-    private double side1, side2, side3;
+    private double side1, side2, side3, base, height;
 
     public Triangle() {
         super();
@@ -12,7 +12,7 @@ class Triangle extends Polygon {
         this.side3 = 0;
     }
 
-    public Triangle(String name, String type, double side1, double side2, double side3) {
+    public Triangle(String name, String type, double side1, double side2, double side3, double base, double height) {
         super(name);
         this.type = type;
         this.side1 = side1;
@@ -50,6 +50,22 @@ class Triangle extends Polygon {
 
     public void setSide3(double side3) {
         this.side3 = side3;
+    }
+
+    public double getBase() {
+        return side1;
+    }
+
+    public void setBase(double base) {
+        this.side1 = side1;
+    }
+
+    public double getHeight() {
+        return side1;
+    }
+
+    public void setHeight(double height) {
+        this.side1 = side1;
     }
 
     public double triArea() {
