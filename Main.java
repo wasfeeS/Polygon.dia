@@ -16,9 +16,9 @@ public class Main {
         double triangleSide2 = scanner.nextDouble();
         System.out.print("Side 3: ");
         double triangleSide3 = scanner.nextDouble();
-        System.out.print("Base ");
+        System.out.print("Base: ");
         double triangleBase = scanner.nextDouble();
-        System.out.print("Height ");
+        System.out.print("Height: ");
         double triangleHeight = scanner.nextDouble();
         scanner.nextLine(); 
 
@@ -55,6 +55,8 @@ public class Main {
         System.out.println("Side 1: " + triangle.getSide1());
         System.out.println("Side 2: " + triangle.getSide2());
         System.out.println("Side 3: " + triangle.getSide3());
+        System.out.println("Side 3: " + triangle.getBase());
+        System.out.println("Side 3: " + triangle.getHeight());
         System.out.println("Triangle Area: " + triangle.triArea());
         System.out.println("Triangle Perimeter: " + triangle.triPeri());
 
